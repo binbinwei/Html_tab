@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>发票小助手</title>
+  <style>
+</style>
+    <style>
+body {
+  background: #fff;
+  font-family: "Open Sans", "Arial";
+}
+main {
+  background: #FFF;
+  width: 500px;
+  margin: 50px auto;
+  padding: 10px 30px 80px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+p {
+  font-size: 13px;
+}
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+label {
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  float: left;
+  padding: 10px 30px;
+  border-top: 2px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #DDD;
+}
+label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2 {
+  display: block;
+}
+input:checked + label {
+  border-top-color: #FFB03D;
+  border-right-color: #DDD;
+  border-left-color: #DDD;
+  border-bottom-color: transparent;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div style="text-align:center;clear:both;margin-top: 30px">
+</div>
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">公司开票</label>
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">工会开票</label>
+  <section id="content1">
+    <div>
+      <div style="margin-left: 10px">
+        <div style="margin-top: 10px">
+          <tr>
+            <td><span style="color: #808080;">名称:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td><span style="color: #000;">上海宝信软件股份有限公司</span></td>
+          </tr>
+        </div>
+        <div style="margin-top: 10px">
+          <tr>
+            <td><span style="color: #808080;">税号:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td><span style="color: #000;">91310000607280598W</span></td>
+          </tr>
+        </div>
+        <div style="margin-top: 10px">
+          <tr>
+            <td><span style="color: #808080;">单位地址:</span> &nbsp;&nbsp;&nbsp; </td>
+            <td><span style="color: #000;">中国（上海）自由贸易试验</span></td>
+          </tr>
+        </div>
+        <div>
+          <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><span style="color: #000;">区郭守敬路515号</span></td>
+          </tr>
+        </div>
+        <div style="margin-top: 10px">
+          <tr>
+            <td><span style="color: #808080;">电话:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td><span style="color: #000;">021-20379999</span></td>
+          </tr>
+        </div>
+        <div style="margin-top: 10px">
+          <tr>
+            <td><span style="color: #808080;">开户银行:</span>&nbsp;&nbsp;&nbsp; </td>
+            <td><span style="color: #000;">工行宝钢国贸支行</span></td>
+          </tr>
+        </div>
+        <div style="margin-top: 10px">
+          <tr>
+            <td><span style="color: #808080;">银行账户:</span>&nbsp;&nbsp;&nbsp; </td>
+            <td><span style="color: #000;">1001153819003291572</span></td>
+          </tr>
+        </div>
+
+      </div>
+      <div style="text-align: center">
+        <hr style="height:1px;width:100%;background:#f0f0f0;border:none;margin-top: 20px">
+        <img style="width:50%;margin-top: 20px" src="billQR.png"/>
+        <h3 style="font-weight: 500;color: #808080;font-size: 14px">开票时提示</h3>
+      </div>
+
+    </div>
+  </section>
+  <section id="content2">
+    <div style="margin-left: 10px">
+      <div style="margin-top: 10px">
+        <tr>
+          <td><span style="color: #808080;">抬头:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+          <td><span style="color: #000;">上海宝信软件股份有限公司工会</span></td>
+        </tr>
+      </div>
+      <div style="margin-top: 10px">
+        <tr>
+          <td><span style="color: #808080;">提示:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+          <td><span style="color: #ffa0a2;">不需要税号</span></td>
+        </tr>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
